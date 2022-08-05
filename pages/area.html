@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地区介绍</title>
+    <link rel="stylesheet" href="../css/area.css">
+</head>
+<body>
+    <div>
+        <div>
+            <img class="cover" src="../img/cover.png">
+        </div>
+
+        <div class="top-class">
+            <span class="top">— 出发,遇见福建 —</span>
+            <div style="margin-top: 20px;">
+                <span class="floor">Set out to meet Fujian</span>
+            </div>           
+        </div>
+
+        <!-- 主体 -->
+        <div style="margin-top: 100px;">
+            <div class="part" style="margin-left: 90px;">
+                <div class="tit">
+                    <span>福州</span>
+                </div>
+                <div class="content">
+                    <span>
+                        福建的省会城市,在时间的长河里留下了浓墨重彩的印记。
+                        当你踏上三坊七巷的石板路,驻足于流水奔腾的闽江边,
+                        漫步在绿茵蔽日的国家森林公园,穿梭在风景灵秀的鼓山
+                        和鼓岭找寻着马尾船政和罗星塔的动人故事,你都会被这座城市的底藴所惊叹。
+                    </span>
+                </div>
+                <div style="margin-top: 90px;">
+                    <img class="blow" src="../img/AD1.webp">
+                </div>
+
+            </div>
+            
+            <div class="part" style="position: absolute;right:0;left: 850px;top: 580px;">
+                <div>
+                    <img class="blow" src="../img/AD0Ijov8BxAEGAAghJnJ1wUo1IaumQYwygQ4gwI.png.webp">
+                </div>
+                <div class="tit" style="margin-top: 60px;">
+                    <span>厦门</span>
+                </div>
+                <div class="content">
+                    <span>
+                        别称“鹭岛”,是许多旅游者脑海中美好深刻的记忆。
+                        中山路街景繁华美食扎堆,鼓浪屿枝独秀情调颇浓,
+                        厦门大学兼容中西秀甲方,环岛路空气清新游人如织。
+                        都说小城故事多,请你在这里静享时光可好。
+                    </span>
+                </div>
+
+
+            </div>
+
+            <div class="part" style="margin-left: 90px;margin-top: 150px;">
+                <div class="tit">
+                    <span>漳州</span>
+                </div>
+                <div class="content">
+                    <span>
+                        闻名的“鱼米花果之乡”,盛产各种水果及海珍品。
+                        这里还有灵山碧水的南靖云水谣,
+                        以及中国为数不过的滨海火山地质地貌风景旅游区,
+                        热情的当地人等着你的到来。
+                    </span>
+                </div>
+                <div style="margin-top: 90px;">
+                    <img class="blow" src="../img/AD0Ijov8BxAEGAAghZnJ1wUo6sKCpQQwygQ4gwI.png.webp">
+                </div>
+
+            </div>
+
+            <div class="part" style="position: absolute;right:0;left: 850px;top: 1300px;">
+                <div>
+                    <img class="blow" src="../img/AD0Ijov8BxAEGAAghZnJ1wUokPvcpgMwygQ4gwI.png.png">
+                </div>
+                <div class="tit" style="margin-top: 60px;">
+                    <span>南平</span>
+                </div>
+                <div class="content">
+                    <span>
+                        以武夷山脉为主体的闽北大山带,
+                        坐拥瑰丽的丹霞地貌和独特的喀斯特地貌景观。
+                        都说“北有泰岳、南有武夷”,在南平的武夷山,
+                        峰奇石峻,山清水秀,人杰地灵,闻名遐迩,
+                        无愧于世界自然与文化遗产的风采，登高远眺闻名。
+                    </span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
+<script>
+        var bb = ''
+        window.onkeydown = function(e){
+            if(e.key == 'b'){
+                bb+='b'
+            }else{
+                bb = ''
+            }
+            if(bb=='bb'){
+                bb = ''         
+                var cover = document.getElementsByClassName("cover");
+                cover[0].src="http://api.btstu.cn/sjbz/?lx=fengjing"
+
+            }
+        }
+    
+</script>

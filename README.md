@@ -14,16 +14,23 @@
 
 小组成员
 
-#zhou
+# zhou
+  #地区
+  #景区
+#
 
-#hong
+# hong
   #首页----index.html
+#
 
-#zhang
+# zhang
   #登录页----login.html
-  #
+  #注册页----register.html
+#
 
-#bao
+# bao
+  #预定
+  #咨询
 
 <br/>
 

@@ -1,0 +1,47 @@
+.cover{
+    height: 300px;
+    width: 1600px;
+}
+.top{
+    font-size: 40px;
+    font-weight: 300;
+
+}
+.floor{
+    display: inline;
+    opacity: 0.5;
+    
+}
+.top-class{
+    margin-top: 50px;
+    text-align: center;
+}
+.part{
+    width: 50%;
+    
+}
+.content{
+    width: 60%;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.tit{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #ff6537;
+    color: white;
+}
+
+.blow{
+    transition: all 1s;
+}
+.blow:hover{
+    transform: scale(1.1);
+}
+body{
+    margin: 0px;
+}

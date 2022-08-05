@@ -3,10 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>红岩旅游网 - 带你走进炽热的夏天</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="js/jquery-1.11.1-min.js"></script>
 </head>
+<style>
+body{
+    margin: 0px;
+    
+}
+.top{
+    background-color: rgb(37, 39, 36);
+    height: 60px;
+    line-height: 60px;
+}
+.down{
+    background-color:rgb(37, 39, 36);
+    height: 120px;
+}
+.tp{
+    background-color: #F8F6EA;
+    height: 110px;
+    display: flex;
+}
+.at{
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+
+}
+.btn{
+    background-color: whitesmoke;
+    width: 50px;
+    height: 25px;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 15px; 
+    color: rgb(128, 131, 129);
+}
+</style>
 <body>
-    首页
+    <!-- 导航栏 -->
+    <div>
+        <div class="top">
+            <div style="margin-left: 80px;color: rgb(163, 158, 158);">
+                <span>联系我们：</span>
+                <img src='img/QQ.png'/> 12345678910
+                <img  style="margin-left: 10px;" src='img/phone.png'/> 9876543210 
+                <div style="position: absolute;right:100px;top: 0px;display: flex;">             
+                <a href="" target="main">
+                    <button class="btn">登录</button>         
+                </a>           
+                <a href="" target="main">
+                    <button class="btn">注册</button>                 
+                </a>
+                </div>                    
+            </div>        
+            
+        </div>
+        <div class="tp">
+            <div> 
+                <img src="img/main.png" height="3px" style="height: 110px;">
+            </div>
+            <div style="line-height: 60px;font-size: 22px;margin-left: 350px;"> 
+                <ul style="display: flex; list-style: none;;">
+                    <li class="liClass"><a class="at" href="">首页</a></li>
+                    <li class="liClass"><a class="at" href="pages/area.html" target="main">地区介绍</a></li>
+                    <li class="liClass"><a class="at" href="pages/scenery.html" target="main">景区介绍</a></li>
+                    <li class="liClass"><a class="at" href="">旅游预定</a></li>
+                    <li class="liClass"><a class="at" href="">旅游资讯</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--主窗口-->
+    <div id="workarea">
+        <iframe onload='setHeight(this);' style="border-width: 0px; width: 100%;" Height="100%" scrolling="no" name="main"></iframe>
+    </div>
+
+
+    <!--底栏-->
+    <div class="down">
+        <div style="margin-left: 80px;color: rgb(163, 158, 158)">
+            
+            <img style="vertical-align:middle" width="60px" src="img/logo.png" alt="">
+            
+            <span style="line-height: 120px;">学习作品-素材源于网络</span>
+        </div> 
+    </div>
+
+    <script>
+
+        function setHeight(el) {
+		    el.style.height = el.contentWindow.document.body.offsetHeight + 110 + 'px';
+		};
+
+        $(function(){
+            
+            //导航中所有文本颜色为黑色
+            $(".liClass > a").css("color" , "black");
+            
+            //默认选中导航菜单中的第一个菜单项
+            $(".liClass:first").addClass("active");
+            
+            //第一个菜单项的文字变成白色
+            $(".liClass:first > a").css("color" , "green");
+            
+            //给所有的菜单项注册鼠标单击事件
+            $(".liClass").click(function(){
+                //移除所有菜单项的激活状态
+                $(".liClass").removeClass("active");
+                //导航中所有文本颜色为黑色
+                $(".liClass > a").css("color" , "black");
+                //当前项目被选中
+                $(this).addClass("active");
+                //当前项目颜色变成白色
+                $(this).children("a").css("color","green");
+            });   
+            
+            
+        })
+
+        
+    </script>
+
 </body>
 </html>

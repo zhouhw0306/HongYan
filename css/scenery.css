@@ -1,0 +1,51 @@
+.tit{
+    height: 35px;
+    border-bottom: 1px solid rgb(158, 147, 144)
+ }
+ .titsub{    
+    display: inline-block;
+    height: 35px;
+    border-bottom: 1px solid rgb(230, 110, 80)
+ }
+ .web{
+    position: relative;
+    width: 1250px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+.zhuti{
+    height: 300px;
+    line-height: 56px;
+    border: 1px solid rgb(219, 216, 216);
+    margin-right: 47px;
+}
+.titi{
+    margin-left: 30px;
+}
+.blow{           
+    transition: all 1s;
+}
+.blow:hover{
+    transform: scale(1.1);
+}
+.img_h{
+    width: 260px;height: 146px;
+}
+.content_h{
+    margin-top: 38px;
+    display: flex;
+}
+.h_zhu{
+    margin-left: 38px;
+}
+.h_zhu_span{
+    display: block;margin-top: 20px;
+}
+.h_zhu_word{
+    color: #878787;
+    font-size: 14px
+}
+body{
+    margin: 0px;
+}
