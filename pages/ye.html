@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>红岩旅游网 - 带你走进炽热的夏天</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #head {
+            height: 50px;
+            background-color: black;
+        }
+        #head .left {
+            float: left;
+        }
+        #head .left p{
+            color: dimgray;
+            float: left;
+            line-height: 50px;
+        }
+       #head .right{
+           line-height: 50px;
+           float: right;
+       }
+        #head .right input{
+            border-radius: 0px 5px 5px 0px;
+            height: 30px;
+            line-height: 50px;
+            border: white;
+        }
+       #head .right select{
+           border-radius: 5px 0 0 5px;
+           height: 30px;
+           line-height: 50px;
+           margin-right: -4px;
+           border: white;
+       }
+        #head .right button:nth-of-type(1){
+            height: 30px;
+            width: 60px;
+            color: white;
+            background-color: dimgray;
+            border: none;
+        }
+        #head .right button:nth-of-type(2){
+            height: 30px;
+            width: 60px;
+            color: white;
+            background-color: darkturquoise;
+            border: none;
+            margin-right: 2px;
+            margin-left: -3px;
+        }
+        #mid .head {
+            height: 140px;
+        }
+        #mid .head .right{
+            float: left;
+            width: 35%;
+            height: 60px;
+            background-color: black;
+            margin-top: 30px;
+        }
+        #mid .head .left{
+            float: right;
+        }
+        #mid .head .left ul{
+            margin-top: 45px;
+        }
+        #mid .head .left ul li{
+            display: inline-block;
+            padding: 0px 30px 0px 30px;
+        }
+        #mid .head .left a:visited{
+            color: black;
+        }
+        #mid .bottoms .tu{
+            height: 300px;
+            background-color: aqua;
+        }
+        #mid .bottoms .zi{
+            height: 50px;
+            width: 10%;
+            line-height: 50px;
+            color: red;
+            margin-left: 20px;
+            margin-bottom: -10px;
+        }
+        #mid .bottoms .den{
+            height: 300px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #mid .bottoms .den form{
+            text-align: center;
+        }
+        #mid .bottoms .den input{
+            height: 50px;
+            width: 245px;
+            margin-top: 10px;
+            padding-left: 7vh;
+            outline: none;
+            caret-color: blue;
+        }
+        #mid .bottoms .den button{
+            margin-top: 15px;
+            height: 50px;
+            width: 300px;
+            background-color: red;
+            color: white;
+            border: none;
+        }
+        #mid .bottoms .den button:active{
+            background-color: rgba(0,0,255,0.3);
+        }
+         span:nth-of-type(1){
+            height: 50px;
+            width: 50px;
+             position: absolute;
+            background: url("./tu/admin.jpeg") no-repeat;
+             background-position: center;
+             background-size: 80% 80%;
+             display: inline-block;
+             margin-top: 10px;
+        }
+        span:nth-of-type(2){
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            background: url("./tu/key.jpeg") no-repeat;
+            background-position: center;
+            background-size: 80% 80%;
+            display: inline-block;
+            margin-top: 75px;
+        }
+        #mid .bottoms .den p:nth-of-type(2){
+            margin-left: -200px;
+        }
+        #mid .bottoms .den p,hr{
+            margin-top: 15px;
+        }
+        #mid .bottoms .den .zhe{
+            background-color: red;
+            height: 50px;
+            width: 300px;
+            margin: auto;
+            margin-top: -50px;
+        }
+        #mid .left li{
+            height: 50px;
+            width: 75px;
+            text-align: center;
+            line-height: 50px;
+        }
+        #mid .left li:active{
+            background-color: rgba(0,0,255,0.3);
+            color: red;
+        }
+        #mid .bottoms a{
+            text-decoration: none;
+        }
+        #mid .bottoms a:active {
+            background-color: rgba(0,0,255,0.3);
+        }
+        /*#mid .bottoms .den .zhe:active{*/
+        /*    background-color: rgba(0,0,255,0.5);*/
+        /*}*/
+        #foot{
+            height: 300px;
+            background-color: black;
+        }
+        #foot li{
+            color: dimgray;
+        }
+        #foot .left{
+            float: left;
+            margin-left: 70px;
+            padding-top: 70px;
+        }
+        #foot .right{
+            float: right;
+            margin-right: 70px;
+            padding-top: 70px;
+        }
+        #foot .bottoms{
+            text-align: center;
+        }
+        #foot .bottoms ul{
+            padding-top: 270px;
+        }
+        #foot .bottoms li{
+            display: inline-block;
+        }
+        #foot .left p:nth-of-type(1){
+            color: coral;
+            font-size: 26px;
+        }
+        #foot .left p:nth-of-type(2){
+            color: white;
+            font-size: 26px;
+        }
+        #foot .left p:nth-of-type(3){
+            color: white;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        #foot .bottoms a{
+            text-decoration: none;
+        }
+        #foot .bottoms a:active{
+            background-color: rgba(0,0,255,0.3);
+        }
+        #foot .bottoms a:visited{
+            color: dimgray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="mid">     
+            <div class="bottoms">
+            <!-- <div class="tu"></div> -->
+            <div class="zi">会员登录</div>
+            <hr><hr style="width: 110px; background-color: red;height: 1px;border: none;margin-top: -2px">
+            <div class="den">
+            <form>
+                <span></span>
+                <span></span>
+            <input type="email" placeholder="账号"><br>
+            <input type="password" placeholder="密码"><br>
+            <button>登录</button>
+                <div class="zhe"></div>
+            </form>
+            <p><a href=zhuce.html>免费注册></a></p>
+            <hr>
+            <p>其他账号登录:</p>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+<script>
+    var as = document.querySelectorAll("#mid a");
+    for (i in as){
+        as[i].onclick = function (){
+            for(var j = 0;j<as.length;j++){
+                a.style.color = "";
+            }
+            this.style.color = "red";
+        }
+    }
+</script>
+</body>
+</html>

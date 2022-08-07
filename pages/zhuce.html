@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>红岩旅游网 - 带你走进炽热的夏天</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #head {
+      height: 50px;
+      background-color: black;
+    }
+    #head .left {
+      float: left;
+    }
+    #head .left p{
+      color: dimgray;
+      float: left;
+      line-height: 50px;
+    }
+    #head .right{
+      line-height: 50px;
+      float: right;
+    }
+    #head .right input{
+      border-radius: 0px 5px 5px 0px;
+      height: 30px;
+      line-height: 50px;
+      border: white;
+    }
+    #head .right select{
+      border-radius: 5px 0 0 5px;
+      height: 30px;
+      line-height: 50px;
+      margin-right: -4px;
+      border: white;
+    }
+    #head .right button:nth-of-type(1){
+      height: 30px;
+      width: 60px;
+      color: white;
+      background-color: dimgray;
+      border: none;
+    }
+    #head .right button:nth-of-type(2){
+      height: 30px;
+      width: 60px;
+      color: white;
+      background-color: darkturquoise;
+      border: none;
+      margin-right: 2px;
+      margin-left: -3px;
+    }
+    #mid .head {
+      height: 140px;
+    }
+    #mid .head .right{
+      float: left;
+      width: 35%;
+      height: 60px;
+      background-color: black;
+      margin-top: 30px;
+    }
+    #mid .head .left{
+      float: right;
+    }
+    #mid .head .left ul{
+      margin-top: 45px;
+    }
+    #mid .head .left ul li{
+      display: inline-block;
+      padding: 0px 30px 0px 30px;
+    }
+    #mid .head .left a:visited{
+      color: black;
+    }
+    #mid .bottoms .tu{
+      height: 300px;
+      background-color: aqua;
+    }
+    #mid .bottoms .zi{
+      height: 50px;
+      width: 10%;
+      line-height: 50px;
+      color: red;
+      margin-left: 20px;
+      margin-bottom: -10px;
+    }
+    #mid .bottoms .den{
+      height: 477px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    #mid .bottoms .den form{
+      text-align: center;
+    }
+    #mid .bottoms .den input{
+      height: 30px;
+      width: 500px;
+      outline: none;
+      caret-color: blue;
+    }
+    #mid .bottoms .den form p{
+      margin-top: -5px;
+    }
+    #mid .bottoms .den button{
+      margin-top: 15px;
+      height: 50px;
+      width: 500px;
+      background-color: red;
+      color: white;
+      border: none;
+      margin-left: 18px;
+    }
+    #mid .bottoms .den button:active{
+      background-color: rgba(0,0,255,0.3);
+    }
+    #mid .bottoms .den p,hr{
+      margin-top: 15px;
+    }
+    #mid .bottoms .den .zhe{
+      background-color: red;
+      height: 50px;
+      width: 500px;
+      margin-top: -50px;
+      margin-left: 518px;
+    }
+    #mid .left li{
+      height: 50px;
+      width: 75px;
+      text-align: center;
+      line-height: 50px;
+    }
+    #mid .left li:active{
+      background-color: rgba(0,0,255,0.3);
+      color: red;
+    }
+    #mid .bottoms a{
+      text-decoration: none;
+    }
+    #mid .bottoms a:active {
+      background-color: rgba(0,0,255,0.3);
+    }
+    /*#mid .bottoms .den .zhe:active{*/
+    /*    background-color: rgba(0,0,255,0.5);*/
+    /*}*/
+    #foot{
+      height: 300px;
+      background-color: black;
+    }
+    #foot li{
+      color: dimgray;
+    }
+    #foot .left{
+      float: left;
+      margin-left: 70px;
+      padding-top: 70px;
+    }
+    #foot .right{
+      float: right;
+      margin-right: 70px;
+      padding-top: 70px;
+    }
+    #foot .bottoms{
+      text-align: center;
+    }
+    #foot .bottoms ul{
+      padding-top: 270px;
+    }
+    #foot .bottoms li{
+      display: inline-block;
+    }
+    #foot .left p:nth-of-type(1){
+      color: coral;
+      font-size: 26px;
+    }
+    #foot .left p:nth-of-type(2){
+      color: white;
+      font-size: 26px;
+    }
+    #foot .left p:nth-of-type(3){
+      color: white;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    #foot .bottoms a{
+      text-decoration: none;
+    }
+    #foot .bottoms a:active{
+      background-color: rgba(0,0,255,0.3);
+    }
+    #foot .bottoms a:visited{
+      color: dimgray;
+    }
+  </style>
+</head>
+<body style="background: url('../img/login.jpg');">
+<div>
+
+  <div id="mid">
+    <div class="bottoms">
+      <!-- <div class="tu"></div> -->
+      <div class="zi">会员注册</div>
+      <hr style="width: 110px; background-color: red;height: 1px;border: none;margin-top: -2px">
+      <div class="den">
+        <form style="margin-top: 30px">
+          <span></span>
+          <span></span>
+          <p>账号：<input type="text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red">*</span></p><br>
+          <p>密码：<input type="password">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red">*</span></p><br>
+          <p style="margin-right: 32px">确认密码：<input type="text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red">*</span></p><br>
+          <p>姓名：<input type="text">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red">*</span></p><br>
+          <p>邮箱：<input type="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+          <p>手机：
+            <select style="width: 200px;height: 34px">
+              <option>中国大陆+86</option>
+              <option>香港+852</option>
+              <option>澳门+853</option>
+              <option>台湾+886</option>
+              <option>韩国+82</option>
+              <option>日本+81</option>
+              <option>美国+1</option>
+              <option>加拿大+1</option>
+              <option>英国+44</option>
+              <option>马来西亚+60</option>
+              <option>泰国+66</option>
+              <option>越南+84</option>
+              <option>法国+33</option>
+              <option>菲律宾+63</option>
+              <option>印度尼西亚+62</option>
+              <option>意大利+39</option>
+              <option>俄罗斯+7</option>
+              <option>新西兰+64</option>
+              <option>荷兰+31</option>
+              <option>瑞典+46</option>
+              <option>澳大利+61</option>
+              <option>德国+49</option>
+              <option>新加坡+65</option>
+              <option>芬兰+358</option>
+              <option>丹麦+45</option>
+              <option>以色列+00972</option>
+              <option>迪拜+971</option>
+
+            </select>
+            <input type="text" style="width: 300px">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red">*</span></p><br>
+          <p>留言：<input type="text" style="height: 90px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+          <button style="margin-top: -5px">注册</button>
+          <div class="zhe"></div>
+        </form>
+    
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

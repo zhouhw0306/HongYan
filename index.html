@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>红岩旅游网 - 带你走进炽热的夏天</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <script type="text/javascript" src="js/jquery-1.11.1-min.js"></script>
+    <link rel="stylesheet" href="../css/reserve.css"> 
+    <script type="text/javascript" src="js/lib/jquery-1.11.1-min.js"></script>
 </head>
 <style>
 body{
@@ -15,7 +16,7 @@ body{
 }
 .top{
     background-color: rgb(37, 39, 36);
-    height: 60px;
+    height: 55px;
     line-height: 60px;
 }
 .down{
@@ -34,74 +35,106 @@ body{
 
 }
 .btn{
-    background-color: whitesmoke;
-    width: 50px;
-    height: 25px;
+    background-color: #505050;
+    width: 60px;
+    height: 30px;
     border: 0px;
-    border-radius: 5px;
     margin-left: 15px; 
-    color: rgb(128, 131, 129);
+    color: rgb(240, 235, 235);
 }
+.box{
+		width:240px;
+		height:30px;	
+		margin:auto;
+}
+.button{
+	float:left;
+	width:50px;
+	height:30px;
+	color:rgb(15, 15, 15);
+	background-color:#c6d5dd;/*将按钮背景设置为红色，字体设置为白*/
+	border:none;
+	outline:none;/*取消边框和外边框将按钮边框去掉*/
+}
+
 </style>
 <body>
-    <!-- 导航栏 -->
-    <div>
-        <div class="top">
-            <div style="margin-left: 80px;color: rgb(163, 158, 158);">
-                <span>联系我们：</span>
-                <img src='img/QQ.png'/> 12345678910
-                <img  style="margin-left: 10px;" src='img/phone.png'/> 9876543210 
-                <div style="position: absolute;right:100px;top: 0px;display: flex;">             
-                <a href="" target="main">
-                    <button class="btn">登录</button>         
-                </a>           
-                <a href="" target="main">
-                    <button class="btn">注册</button>                 
-                </a>
-                </div>                    
-            </div>        
-            
+    
+    <div class="head">
+        <div class="nav">
+        <div class="nav-left">
+        <span>联系我们:</span>
+        <img src="../img2/qq.png" alt="">
+        <span>12345678</span>
+        <img src="../img2/tel.png" alt="">
+        <span>00-000000</span>
         </div>
-        <div class="tp">
-            <div> 
-                <img src="img/main.png" height="3px" style="height: 110px;">
+        <div class="nav-right">
+            <input type="search" id="search" placeholder="  请输入内容...">
+            <button class="btn1" onclick="location.href='login.html'">登录</button>
+            <button class="btn2" onclick="location.href='login.html'">注册</button>
+        </div>
+        </div>
+        <div class="tit">
+            <div class="tit-left">
+            <span><b>红岩</b></span>
+            <span>旅游网</span>
             </div>
-            <div style="line-height: 60px;font-size: 22px;margin-left: 350px;"> 
-                <ul style="display: flex; list-style: none;;">
-                    <li class="liClass"><a class="at" href="">首页</a></li>
-                    <li class="liClass"><a class="at" href="pages/area.html" target="main">地区介绍</a></li>
-                    <li class="liClass"><a class="at" href="pages/scenery.html" target="main">景区介绍</a></li>
-                    <li class="liClass"><a class="at" href="">旅游预定</a></li>
-                    <li class="liClass"><a class="at" href="">旅游资讯</a></li>
-                </ul>
-            </div>
+            <div class="tit-right">
+                <ul>
+                <li class="liClass"><a href="pages/tourism.html" target="main">首页</a></li>
+                <li class="liClass"><a href="pages/area.html" target="main">地区介绍</a></li>
+                <li class="liClass"><a href="pages/scenery.html" target="main">景区介绍</a></li>
+                <li class="liClass"><a href="pages/reserve.html" target="main">旅游预定</a></li>
+                <li class="liClass"><a href="pages/consult.html" target="main">旅游资讯</a></li>                
+                </ul>                 
+            </div>           
         </div>
     </div>
-
     <!--主窗口-->
     <div id="workarea">
-        <iframe onload='setHeight(this);' style="border-width: 0px; width: 100%;" Height="100%" scrolling="no" name="main"></iframe>
+        <iframe src="pages/tourism.html" onload='setHeight(this);' style="border-width: 0px; width: 100%;" scrolling="no" name="main"></iframe>
     </div>
 
 
-    <!--底栏-->
-    <div class="down">
+    <!--页脚-->
+    <footer class="down">
         <div style="margin-left: 80px;color: rgb(163, 158, 158)">
             
             <img style="vertical-align:middle" width="60px" src="img/logo.png" alt="">
             
             <span style="line-height: 120px;">学习作品-素材源于网络</span>
         </div> 
-    </div>
+    </footer>
+  
 
     <script>
 
         function setHeight(el) {
-		    el.style.height = el.contentWindow.document.body.offsetHeight + 110 + 'px';
-		};
+            el.style.height = el.contentWindow.document.body.offsetHeight + 110 + 'px';
+        };
 
+        function search(){     
+            if($("#search").val()){
+                window.open('https://www.bing.com/search?q=' + $("#value").val());
+            } else{
+                document.getElementById("search").placeholder="  不能为空! ! !"
+            }
+            
+        }
+
+        document.getElementById("search").onfocus = function(){
+            document.getElementById("search").placeholder="  请输入内容..."
+        }
+ 
         $(function(){
             
+            window.onkeydown = function(e){
+                if(e.keyCode==13 && $("#search").val()){
+                    window.open('https://www.bing.com/search?q=' + $("#search").val());
+                }
+            }
+
             //导航中所有文本颜色为黑色
             $(".liClass > a").css("color" , "black");
             
@@ -119,7 +152,7 @@ body{
                 $(".liClass > a").css("color" , "black");
                 //当前项目被选中
                 $(this).addClass("active");
-                //当前项目颜色变成白色
+                //当前项目颜色变成绿色
                 $(this).children("a").css("color","green");
             });   
             
